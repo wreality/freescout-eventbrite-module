@@ -1,0 +1,39 @@
+{
+  "name": "wreality/eventbrite",
+  "description": "Freescout Eventbrite modules",
+  "version": "1.0.2",
+  "keywords": [
+    "helpdesk",
+    "help desk",
+    "shared mailbox",
+    "freescout",
+    "wedevs",
+    "Eventbrite"
+  ],
+  "license": "AGPL-3.0",
+  "authors": [
+    {
+      "name": "Brian Adams",
+      "email": "wreality@gmail.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Modules\\Eventbrite\\Providers\\EventbriteServiceProvider"
+      ],
+      "aliases": {}
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Modules\\Eventbrite\\": ""
+    }
+  },
+  "replace": {
+    "laravel/framework": "*"
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^7.0"
+  }
+}

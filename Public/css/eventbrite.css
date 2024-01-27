@@ -1,0 +1,224 @@
+#conv-layout-customer {
+  overflow: auto;
+}
+
+.customer-extra {
+  margin-top: 10px;
+}
+.customer-data {
+  padding: 0;
+}
+.eventbrite-container {
+  padding: 5px 2px 5px 0;
+ }
+
+.eventbrite-heading .eventbrite-title h4 {
+  color: #2a3b47;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.eventbrite-container h5 {
+  color: #2a3b47;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.eventbrite-container .eventbrite-tickets .eventbrite-ticket {
+  box-shadow: 0 2px 2px -1px rgba(238,238,234,0.1);
+  border-radius: 5px;
+  background: rgb(236, 237, 239);
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+.eventbrite-container .eventbrite-tickets .eventbrite-ticket > span:last-child {
+  padding: 5px;
+}
+
+
+.eventbrite-container .eventbrite-tickets .eventbrite-ticket .status {
+  padding: 4px;
+  display:flex;
+  align-items: center;
+  width: 3em;
+  border-radius: 5px 0 0 5px;
+  align-self: stretch;
+  overflow: hidden;
+}
+.eventbrite-container .eventbrite-tickets .eventbrite-ticket .status.checked {
+  background: rgb(56, 255, 56);
+}
+.eventbrite-container .eventbrite-tickets {
+  display:flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.eventbrite-container .eventbrite-orders input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+
+.eventbrite-container .eventbrite-orders .tabs {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 2px -1px rgba(238, 238, 234, 0.1);
+}
+.eventbrite-container .eventbrite-orders .tab {
+  width: 100%;
+  color: #000;
+  overflow: hidden;
+}
+
+.eventbrite-container .eventbrite-orders .tab-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5em;
+  background: rgb(236, 237, 239);
+  cursor: pointer;
+  margin: 0px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.eventbrite-container .eventbrite-orders .tab-label .tab-order-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+
+}
+.eventbrite-container .eventbrite-orders .tab-label:hover {
+  background: #d7d6d6;
+}
+.eventbrite-container .eventbrite-orders .tab-label .tab-order-summary::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.eventbrite-container .eventbrite-orders .tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #000;
+  background: #f8f9f9;
+  transition: all 0.35s;
+}
+
+.eventbrite-container .eventbrite-orders .tab-content .tab-content-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.eventbrite-container .eventbrite-orders .tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+.eventbrite-container .eventbrite-orders .tab-close:hover {
+  background: #cdcccc;
+}
+.eventbrite-container .eventbrite-orders input:checked + .tab-label {
+  background: #f1f1f1;
+}
+.eventbrite-container .eventbrite-orders input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+.eventbrite-container .eventbrite-orders input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+.eventbrite-container .eventbrite-orders .tab-content .subscription-title,
+.eventbrite-container .eventbrite-orders .tab-content .invoice-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+.eventbrite-container .eventbrite-orders .tab-content .subscriptions,
+.eventbrite-container .eventbrite-orders .tab-content .invoices {
+  margin-top: 6px;
+}
+.eventbrite-container .eventbrite-orders .first-invoice,
+.eventbrite-container .eventbrite-orders .first-subscription {
+  border-top: 1px solid rgb(205, 201, 201);
+}
+
+.eventbrite-container
+  .eventbrite-orders
+  .tab-content
+  .subscriptions
+  .subscription,
+.eventbrite-container .eventbrite-orders .tab-content .invoices .invoice {
+  padding: 5px 0px;
+  font-size: 12px;
+  display: block;
+  border-bottom: 1px solid rgb(205, 201, 201);
+}
+
+.eventbrite-container .eventbrite-orders .status {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.eventbrite-container .eventbrite-orders .status.checked {
+color: rgb(42, 100, 4);
+}
+
+.eventbrite-container .eventbrite-orders .tab-content .price {
+  display: inline-block;
+  font-weight: bold;
+}
+.eventbrite-container .eventbrite-orders .tab-content .date-time {
+  display: inline-block;
+  font-size: 11px;
+}
+.eventbrite-container .eventbrite-dateblock-horiz {
+  display: block;
+}
+.eventbrite-container .eventbrite-dateblock-horiz {
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: 1px solid rgb(92, 91, 91);
+  background: rgb(206, 204, 204);
+}
+
+.eventbrite-container .eventbrite-dateblock,
+.eventbrite-container .eventbrite-dateblock span {
+  display: block;
+}
+.eventbrite-container .eventbrite-dateblock {
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: 1px solid rgb(92, 91, 91)
+}
+.eventbrite-container .eventbrite-dateblock span:nth-child(1) {
+  background-color: rgb(255,32,58);
+  color:white;
+  padding: 0px 5px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.eventbrite-container .eventbrite-dateblock span:nth-child(2) {
+  padding: 2px 3px 0px 0px;
+  font-size: 1.3em;
+  line-height: 0.8em;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Eventbrite",
+  "alias": "eventbrite",
+  "description": "Show customer's eventbrite data.",
+  "version": "1.0.2",
+  "detailsUrl": "https://github.com/wreality/FreeScout-Eventbrite-Module",
+  "author": "Brian Adams",
+  "authorUrl": "https://github.com/wreality",
+  "requiredAppVersion": "1.0.2",
+  "license": "AGPL-3.0",
+  "keywords": [],
+  "active": 0,
+  "order": 0,
+  "img": "",
+  "providers": ["Modules\\Eventbrite\\Providers\\EventbriteServiceProvider"],
+  "aliases": {},
+  "files": ["start.php"],
+  "requires": []
+}
